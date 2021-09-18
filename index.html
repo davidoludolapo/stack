@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="https://kit.fontawesome.com/4c9d9faa24.js" crossorigin="anonymous"></script>
+
+    <style>
+      #ind {
+        margin-bottom: -50px;
+      }
+      #ind button {
+        width: 20px;
+        border-radius: 10px;
+        background: #333;
+        background-color: #0b5eda;
+      }
+
+      .line{
+        border: 1px solid red;
+        width: 50%;
+        align-self: center;
+      }
+
+      .ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: sticky;
+    background:#e4e00da2;
+    border-radius: 10%;
+  }
+  #ball1 {
+    left: 5%;
+  }
+  #ball2 {
+    left: 7%;
+    top: 14%;
+    /* transform: scale(1.5); */
+  }
+  #ball3 {
+    left: 90%;
+    top: 14%;
+    background: #DA680B;
+    /* transform: scale(1.5); */
+  }
+  #ball4 {
+    left: 88%;
+    top: 18%;
+    /* transform: scale(1.5); */
+  }
+
+  .hov:hover {
+    transform: scale(1.5);
+    background: rgb(119, 117, 117);
+  }
+    </style>
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <i class="fab fa-stack-overflow ms-4" style="color: chocolate;"></i>
+
+        
+        <a href="" class="navbar-brand ms-4">stack <strong>overflow</strong></a> 
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item me-4">
+                <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item me-4">
+                <a href="" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item me-4">
+                <a href="" class="nav-link">For Teams</a>
+            </li>
+            <li><form class="d-flex me-3" style="width: 500px;">
+              
+              
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form></li>
+            <button type="button" class="btn btn-outline-light me-3 btn-sm-w-3">Log In</button>
+            <button type="button" class="btn btn-outline-primary">Sign Up</button>
+          </ul>
+
+        </div>
+        
+        </nav>
+      </div>
+      
+      
+        <div class="container-fluid bg-dark rounded mt-5 p-5">
+
+          <div class="ball" id= "ball1"><img class="w-25" src="/images/illo-question.png" alt=""></div>
+          <div class="ball" id= "ball2"></div>
+          <div class="ball" id= "ball3"></div>
+          <div class="ball" id= "ball4"></div>
+
+        <div class="container p-4">
+          <div class="row gap-4 justify-content-center text-center";>
+            <div class="col-12 col-md-4 p-4" style="background-color: #FEE3CD; border-radius: 25px 0px 25px 0px;">
+              <i class="fas fa-search fa-3x mb-3" style="color: #fac497;"></i>
+              <p>Find the best answer to your technical question, help others answer theirs</p>
+              <a href="#" class="btn border text-light" style="background-color: #DA680B;">Join the Community</a>
+            </div>
+            <div class="col-12 col-md-4 p-4" style="background-color: #CDE9FE; border-radius: 25px 0px 25px 0px;">
+              <i class="fas fa-lock fa-3x mb-3" style="color: #90cbf8;"></i>
+              <p>Want a secure, private space for your technical knowledge?</p>
+              <a href="#" class="btn border text-light" style="background-color: #0074CC;">Create a free Team</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container mt-5">
+          <h2 class="text-center text-light">Every <span class="text-primary">mobile developer</span> has a tab open to Stack overflow</h2>
+        </div>
+
+
+        <div class="container p-5" style="margin-top: 90px;">
+          <div class="row justify-content-center text-center gap-5">
+            <div class="col-12 col-md-2">
+              <h5 class="text-light">100+ Million</h5>
+              <p class="text-secondary">monthy visitors to Stack Overflow & Stack Exchange</p>
+            </div>
+            <div class="col-12 col-md-2">
+              <h5 class="text-light">45.1+ Billion</h5>
+              <p class="text-secondary">Times a developer got help since 2008</p>
+            </div>
+            <div class="col-12 col-md-2">
+              <h5 class="text-light">179% ROI</h5>
+              <p class="text-secondary">from companies using Stack Overflow for Teams</p>
+            </div>
+            <div class="col-12 col-md-2">
+              <h5 class="text-light">5,000+</h5>
+              <p class="text-secondary">Stack Overflow for Teams instances active every day</p>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+<div class="container-fluid mt-5 " style="position: relative; top: -78px;">
+  
+    <div class="row gap-4 justify-content-center text-center">
+      <div class="col-12 col-md-4 p-4 rounded shadow" style="background-color: #FEE3CD;">
+        <a href="#" class="mx-auto me-5 mt-3">stack <strong>overflow</strong></a> 
+        <img class="w-100" src="images/illo-public.svg" alt="">
+        <h4 class="mt-4 mb-4">A public platform building the definitive collection of coding questions & answers</h4>
+        <p class="text-secondary mb-4">A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+        <a href="#" class="btn border text-light" style="background-color: #DA680B;">Join the Community</a>
+      </div>
+      
+      <div class="col-12 col-md-4 p-4 rounded shadow" style="background-color: #CDE9FE;">
+        <a href="#" class="mx-auto me-5">FOR <strong>TEAMS</strong></a> 
+        <img class="w-100" src="images/illo-teams.svg" alt="">
+        <h4 class="mt-4 mb-4">A private collaboration & knowledge sharing SaaS platform for companies</h4>
+        <p class="text-secondary mb-4">A web-based platform to increase productivity, decrease cycle times, accelerate time to market, and protect institutional knowledge.</p>
+        <a href="#" class="btn text-light" style="background-color: #0074CC;">Create a free Team</a>
+      </div>
+    </div>
+ 
+</div>
+
+  <!-- <div class="carousel slide" data-bs-ride="carousel" id="caro">
+    <ol class="carousel-indicators" id="ind">
+      <li data-bs-target="#caro" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#caro" data-bs-slide-to="1" ></li>
+      <li data-bs-target="#caro" data-bs-slide-to="2" ></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/dialpad-alt.svg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="images/siemens-alt.svg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="images/philips-alt.svg" alt="">
+      </div>
+    </div>
+  </div> -->
+
+
+
+<div class="container mb-5">
+  <p class="text-center text-secondary">Thousands of organizations around the globe use Stack Overflow for Teams</p>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators" id="ind">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 d-flex gap-5">
+            <img src="images/dialpad-alt.svg" alt="">
+            <img src="images/philips-alt.svg" alt="">
+            <img src="images/siemens-alt.svg" alt="">
+            <img src="images/wisetech-global-alt.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 d-flex gap-5">
+            <img src="images/philips-alt.svg" alt="">
+            <img src="images/siemens-alt.svg" alt="">
+            <img src="images/wisetech-global-alt.svg" alt="">
+            <img src="images/dialpad-alt.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 d-flex gap-5">
+            <img src="images/philips-alt.svg" alt="">
+            <img src="images/siemens-alt.svg" alt="">
+            <img src="images/wisetech-global-alt.svg" alt="">
+            <img src="images/dialpad-alt.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div>
+</div>
+
+<div class="container p-5">
+  <div class="row">
+    <div class=" col-12 col-md-4 d-none d-sm-block">
+      <img src="images/illo-home-search.png" alt="" style="width: 400px;">
+    </div>
+    <div class="col-12 col-md-4 d-sm-block">
+      <img src="images/illo-home-search.png" alt="" style="width: 400px; position: relative;">
+    </div>
+    <div class="col-12 col-md-4 d-none d-sm-block">
+      <img src="images/illo-home-search.png" alt="" style="width: 400px;">
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid bg-dark text-center">
+  <h4 class="text-light text-center p-5 mb-4">Capture your company’s knowledge and context in a discoverable format to unblock your team </h4>
+  <a href="#" class="btn btn-large btn-primary mb-5">Take a tour of Team</a>
+
+ 
+  <div class="row text-center justify-content-center gap-5 mb-5">
+    <div class="col-12 col-md-2">
+      <i class="fas fa-check-circle text-success"></i>
+      <h5 class="text-light">Increase Productivity</h5>
+      <p class="text-secondary">If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+    </div>
+    <div class="col-12 col-md-2">
+      <i class="fas fa-check-circle text-success"></i>
+      <h5 class="text-light">Increase Productivity</h5>
+      <p class="text-secondary">If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+    </div>
+    <div class="col-12 col-md-2">
+      <i class="fas fa-check-circle text-success"></i>
+      <h5 class="text-light">Increase Productivity</h5>
+      <p class="text-secondary">If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+    </div>
+  </div>
+  
+  <h2 class="text-light mb-3">Ensure your company stays on course</h2>
+  <p class="text-light mb-5">Here are just a few types of technologists that we help.</p>
+
+  <div class="container">
+    <div class="row text-light justify-content-center gap-3 mb-5 p-5">
+      <div class="col-12 col-md-2 border border-secondary p-3 rounded hov">
+        <i class="fas fa-rocket fa-3x mb-3"></i>
+        <h4>DevOps Engineers</h4>
+      </div>
+      <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+        <i class="fas fa-project-diagram fa-3x mb-3"></i>
+        <h4>DevOps Engineers</h4>
+      </div>
+      <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+        <i class="fas fa-users-cog fa-3x mb-3"></i>
+        <h4>Software Engineers</h4>
+      </div>
+      <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+        <i class="fas fa-headset fa-3x mb-3"></i>
+        <h4>Support Teams</h4>
+      </div>
+      <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+        <i class="fas fa-users fa-3x mb-3"></i>
+        <h4>Engineering Leaders</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5">
+  
+    <div class="row gap-4 justify-content-center tet-center">
+      <div class="col-12 col-md-2 p-4 rounded shadow" style="background-color: #FFFFFf;">
+        <!-- <div class="btn btn-dark mb-5">Free</div> -->
+        <a href="#" class="mx-auto me-5 mt-3">stack <strong>overflow</strong></a> 
+        
+        <p class="text-secondary mb-4">Free knowledge sharing and collaboration platform</p>
+        <div class="item mb-5" style="border-bottom: 1px solid #DA680B;">
+          <h4>Free</h4>
+          <p class="text-secondary">No credit card required</p>
+        </div>
+  
+        <div class="item-2 d-flex">
+          <i class="fas fa-bullhorn"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex">
+          <i class="fas fa-shield-alt"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex mb-5">
+          <i class="fas fa-database"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <a href="#" class="btn border text-light" style="background-color: #DA680B;">Join the Community</a>
+      </div>
+      
+      <div class="col-12 col-md-2 p-4 rounded shadow" style="background-color: #FFFFFf;">
+        <a href="#" class="mx-auto me-5 mt-3">stack <strong>overflow</strong></a> 
+        
+        <p class="text-secondary mb-4">Free knowledge sharing and collaboration platform</p>
+        <div class="item mb-5" style="border-bottom: 1px solid #DA680B;">
+          <h4>Free</h4>
+          <p class="text-secondary">No credit card required</p>
+        </div>
+  
+        <div class="item-2 d-flex">
+          <i class="fas fa-bullhorn"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex">
+          <i class="fas fa-shield-alt"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex mb-5">
+          <i class="fas fa-database"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <a href="#" class="btn border text-light" style="background-color: #C8CCD0;">Join the Community</a>
+      </div>
+      <div class="col-12 col-md-2 p-4 rounded shadow" style="background-color: #FFFFFf;">
+        <a href="#" class="mx-auto me-5 mt-3">stack <strong>overflow</strong></a> 
+        
+        <p class="text-secondary mb-4">Free knowledge sharing and collaboration platform</p>
+        <div class="item mb-5" style="border-bottom: 1px solid #DA680B;">
+          <h4>Free</h4>
+          <p class="text-secondary">No credit card required</p>
+        </div>
+  
+        <div class="item-2 d-flex">
+          <i class="fas fa-bullhorn"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex">
+          <i class="fas fa-shield-alt"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex mb-5">
+          <i class="fas fa-database"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <a href="#" class="btn border text-light" style="background-color: #525960;">Join the Community</a>
+      </div>
+      <div class="col-12 col-md-2 p-4 rounded shadow" style="background-color: #FFFFFf;">
+        <a href="#" class="mx-auto me-5 mt-3">stack <strong>overflow</strong></a> 
+        
+        <p class="text-secondary mb-4">Free knowledge sharing and collaboration platform</p>
+        <div class="item mb-5" style="border-bottom: 1px solid #DA680B;">
+          <h4>Free</h4>
+          <p class="text-secondary">No credit card required</p>
+        </div>
+  
+        <div class="item-2 d-flex">.
+          <i class="fas fa-bullhorn"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex">
+          <i class="fas fa-shield-alt"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <div class="item-2 d-flex mb-5">
+          <i class="fas fa-database"></i>
+          <p>ChatOps integrations - Slack & Microsoft Teams</p>
+        </div>
+        <a href="#" class="btn border text-light" style="background-color: #181847;">Join the Community</a>
+      </div>
+    </div>
+
+
+    <!--  <div class=""> -->
+      <div class="row text-light justify-content-center gap-3 mb-5 p-5">
+        <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+         <p>A Forrester Consulting study shows <span class="text-primary fs-5">179% return on investment</span> with Stack Overflow for Teams.</p>
+        </div>
+        <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+          <p>The world’s largest telecom firm <span class="text-primary fs-5">saved $10M</span> in deflected support cases with our centralized knowledge base.</p>
+        </div>
+        <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+          <p>Subject-matter experts at software platform Unqork had <span class="text-primary fs-5">27% more time</span> to work on projects after using Teams.</p>
+        </div>
+        <div class="col-12 col-md-2 border border-secondary p-3 rounded">
+          <p>Subject-matter experts at software platform Unqork had 27% more time to work on projects after using Teams.</p>
+          <div class="btn btn-outline-primary text-light">Calculate your ROI</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container p-5">
+      <h3 class="text-light">Integrates with and improves other tools</h3>
+      <p class="text-secondary">All plans come with integrations for ChatOps tools Slack & Microsoft Teams in order to cut down on pings, limit distractions and make the tools even more powerful. Business and Enterprise customers get access to Jira, GitHub & Okta integrations.</p>
+
+      <!-- <div class="row">
+        <div class="col-12 w-2 col-md-2 border border-light">jljl</div>
+        <div class="col-12 col-md-2 border border-light">jljl</div>
+        <div class="col-12 col-md-2 border border-light">jljl</div>
+        <div class="col-12 col-md-2 border border-light">jljl</div>
+         -->
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+        
+         
+         
+
+        
+       
+
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery.js"></script>
+</body>
+</html>
